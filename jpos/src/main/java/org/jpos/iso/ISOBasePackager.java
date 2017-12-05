@@ -341,7 +341,8 @@ public abstract class ISOBasePackager implements ISOPackager, LogSource {
                             e.getMessage(), e.getNested().toString(), i, consumed)
                         );
                     }
-                    throw e;
+                    //throw e;
+                    continue; //to get other field values when exception is encountered
                 }
             } // for each field
 
